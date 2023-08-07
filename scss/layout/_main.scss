@@ -1,0 +1,26 @@
+@use "../foundation/variable" as *;
+
+.l-main{
+    background-color: $backglound-color;
+    position: relative;
+    display: flex;
+    width: 81%;
+    height: auto;
+}
+
+.l-main-visual{
+    position: absolute;
+    background-image: url(../../images/dummy-site.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 398px;
+}
+
+.l-main-visual_text{
+    display: flex;
+    color: $white;
+    font-weight: 700;
+    font-size: 1.6em;
+    margin-top: 16%;
+    margin-left: 4%;
+}

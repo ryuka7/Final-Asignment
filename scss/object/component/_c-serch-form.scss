@@ -1,0 +1,32 @@
+@use "../../foundation/variable" as v;
+
+.c-serch-form{
+    display: flex;
+    top: 33%;
+    height: 25%;
+    margin: 4% 1% 0 auto;
+    width: 30%;
+}
+
+.c-serch_box{
+    width: 80%;
+    margin-right: 4%;
+    border: solid black 1px;
+    border-radius: 6px;
+    background-color: v.$white;
+    
+}
+
+.c-serch_box ::after{
+    background-image: url(../../../images/serch-icon.svg);
+    background-size: 2em;
+}
+
+.c-serch_button{
+    width: 30%;
+    border: solid black 1px;
+    border-radius: 6px;
+    background-color: #f2edec ;
+    background: linear-gradient( #ded8d3 100%);
+
+}

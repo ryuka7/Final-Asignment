@@ -1,0 +1,45 @@
+@use "../../foundation/variable" as *;
+
+.p-map{
+    background-image: url(../../../images/map.png);
+    background-size: contain;
+    width: 100%;
+    height: 85vh;
+    position: absolute;
+    margin-top: 125%;
+    
+}
+.p-map__shadow{
+    position: absolute;
+	background: rgba(0, 0, 0, .4); 
+	width: 100%; 
+	height: 90%;
+	top: 0; 
+	left: 0;
+	z-index: 1000;
+}
+
+.p-map__shadow--dark{
+    position: absolute;
+    background: rgba(0, 0, 0, .5); 
+	width: 60%; 
+	height: 100%;
+	top: 0; 
+	left: 0;
+	z-index: 1000;
+
+    & h2{
+        color: $white;
+        margin: 10%;
+        margin-bottom: 5%;
+    }
+
+    & p{
+        color: $white;
+        font-size: 0.8em;
+        width: 70%;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+
+}

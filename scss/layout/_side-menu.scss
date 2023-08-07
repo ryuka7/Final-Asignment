@@ -1,0 +1,34 @@
+@use "../foundation/variable" as *;
+
+.l-side-menu{
+    display: block;
+    width: 19%;
+    height: 275vh;
+    background-color: $submenu-color;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: $text-glay;
+    
+}
+
+.l-menu_title{
+    margin: 16%;
+}
+.l-menu{
+    list-style: none;
+    text-decoration: none;
+
+    & li{
+        list-style: none;
+    }
+}
+
+.l-menu_subtitle{
+    margin: 16%;
+}
+
+.l-menu_list{
+    margin-left: 20%;
+    line-height: 2.5em;
+}

@@ -1,0 +1,225 @@
+* {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+.l-footer {
+  background-image: url(../../images/pc_footer.png);
+  background-size: contain;
+  width: 124%;
+  height: 100%;
+  top: 144%;
+  position: absolute;
+  z-index: 4000;
+}
+
+.l-header {
+  display: flex;
+  position: relative;
+  width: 81%;
+  height: 120px;
+  background-color: #FFF7EF;
+}
+
+.l-nav {
+  height: 100%;
+}
+
+.l-title {
+  display: flex;
+  height: 100%;
+  font-size: 250%;
+  color: #707070;
+  align-items: center;
+  padding: 0% 15%;
+}
+
+.l-main {
+  background-color: #FFFDFA;
+  position: relative;
+  display: flex;
+  width: 81%;
+  height: auto;
+}
+
+.l-main-visual {
+  position: absolute;
+  background-image: url(../../images/dummy-site.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 398px;
+}
+
+.l-main-visual_text {
+  display: flex;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.6em;
+  margin-top: 16%;
+  margin-left: 4%;
+}
+
+.l-side-menu {
+  display: block;
+  width: 19%;
+  height: 275vh;
+  background-color: #F2EDE9;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #707070;
+}
+
+.l-menu_title {
+  margin: 16%;
+}
+
+.l-menu {
+  list-style: none;
+  text-decoration: none;
+}
+.l-menu li {
+  list-style: none;
+}
+
+.l-menu_subtitle {
+  margin: 16%;
+}
+
+.l-menu_list {
+  margin-left: 20%;
+  line-height: 2.5em;
+}
+
+.c-serch-form {
+  display: flex;
+  top: 33%;
+  height: 25%;
+  margin: 4% 1% 0 auto;
+  width: 30%;
+}
+
+.c-serch_box {
+  width: 80%;
+  margin-right: 4%;
+  border: solid black 1px;
+  border-radius: 6px;
+  background-color: #ffffff;
+}
+
+.c-serch_box ::after {
+  background-image: url(../../../images/serch-icon.svg);
+  background-size: 2em;
+}
+
+.c-serch_button {
+  width: 30%;
+  border: solid black 1px;
+  border-radius: 6px;
+  background-color: #f2edec;
+  background: linear-gradient(#ded8d3 100%);
+}
+
+.c-title {
+  display: flex;
+  color: #ffffff;
+}
+
+.c-title ::after {
+  border: solid 1px;
+  color: #ffffff;
+  width: 2%;
+  height: 1px;
+}
+
+.p-content--wrapper {
+  display: flex;
+  top: 398px;
+  justify-content: space-between;
+}
+
+.p-content--TakeOut {
+  background-image: url(../../../images/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png);
+  background-size: contain;
+  width: 40%;
+  height: 100%;
+  margin-top: 40%;
+  margin-left: 6%;
+}
+
+.p-content__item--wrapper {
+  width: 265%;
+  height: auto;
+  margin-top: 125%;
+}
+
+.p-content__item {
+  width: 35%;
+  height: 15%;
+  background-color: #ffffff;
+  opacity: 0.5;
+  margin-left: 1.3%;
+  margin-top: 1%;
+  padding-bottom: 1%;
+}
+.p-content__item p {
+  font-size: 0.8em;
+  margin: 0 0 0 3%;
+  padding-right: 1%;
+}
+.p-content__item h3 {
+  margin-top: 2%;
+  padding: 3% 0% 0% 4%;
+}
+
+.p-content--EatIn {
+  background-image: url(../../../images/burgers-and\ potates.png);
+  background-size: cover;
+  width: 40%;
+  height: 67%;
+  margin-top: 40%;
+  margin-right: 6%;
+}
+
+.p-map {
+  background-image: url(../../../images/map.png);
+  background-size: contain;
+  width: 100%;
+  height: 85vh;
+  position: absolute;
+  margin-top: 125%;
+}
+
+.p-map__shadow {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 90%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.p-map__shadow--dark {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 60%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.p-map__shadow--dark h2 {
+  color: #ffffff;
+  margin: 10%;
+  margin-bottom: 5%;
+}
+.p-map__shadow--dark p {
+  color: #ffffff;
+  font-size: 0.8em;
+  width: 70%;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+/*# sourceMappingURL=common.css.map */

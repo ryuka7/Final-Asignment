@@ -1,0 +1,23 @@
+@use "../foundation/variable" as *;
+
+.l-header{
+    display: flex;
+    position: relative;
+    width: 81%;
+    height: 120px;
+    background-color: $header-color;
+}
+
+.l-nav{
+    height: 100%;
+}
+
+.l-title{
+    display: flex;
+    height: 100%;
+    font-size:250%;
+    color: $text-glay;
+    align-items: center;
+    padding: 0% 15%;
+}
+

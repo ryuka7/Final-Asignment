@@ -1,0 +1,15 @@
+@use "../../foundation/variable" as *;
+
+.c-title{
+    // margin: 2%;
+    display: flex;
+    color: $white;
+    // font-size: 3em;
+}
+
+.c-title ::after{
+    border: solid 1px;
+    color: $white;
+    width: 2%;
+    height: 1px;
+}
