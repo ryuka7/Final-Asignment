@@ -1,15 +1,11 @@
 @use "../foundation/variable" as *;
 
 .l-side-menu{
+    grid-column: 2/3;
     display: block;
-    width: 19%;
-    height: 275vh;
+    height: 100%;
     background-color: $submenu-color;
-    position: absolute;
-    right: 0;
-    top: 0;
     color: $text-glay;
-    
 }
 
 .l-menu_title{

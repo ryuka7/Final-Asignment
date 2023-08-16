@@ -1,19 +1,29 @@
 @use "../foundation/variable" as *;
 
+.l-body{
+    position: relative;
+}
+
+.l-grid{
+    display: grid;
+    grid-template-columns: 81% 19%;
+    
+}
+
 .l-main{
     background-color: $backglound-color;
     position: relative;
-    display: flex;
-    width: 81%;
     height: auto;
 }
 
 .l-main-visual{
-    position: absolute;
     background-image: url(../../images/dummy-site.jpg);
-    background-size: cover;
+    background-size: contain;
     width: 100%;
     height: 398px;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .l-main-visual_text{
@@ -21,6 +31,10 @@
     color: $white;
     font-weight: 700;
     font-size: 1.6em;
-    margin-top: 16%;
     margin-left: 4%;
+    align-items: center;
+}
+
+.l-main__wrapper{
+    grid-column: 1;
 }

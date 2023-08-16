@@ -4,16 +4,16 @@
     background-image: url(../../../images/map.png);
     background-size: contain;
     width: 100%;
-    height: 85vh;
-    position: absolute;
-    margin-top: 125%;
+    height: 491px;
+    position: relative;
+    margin-top: 6%;
     
 }
 .p-map__shadow{
     position: absolute;
 	background: rgba(0, 0, 0, .4); 
 	width: 100%; 
-	height: 90%;
+	height: 100%;
 	top: 0; 
 	left: 0;
 	z-index: 1000;
