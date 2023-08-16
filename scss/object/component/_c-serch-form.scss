@@ -1,11 +1,13 @@
 @use "../../foundation/variable" as v;
 
 .c-serch-form{
-    position: relative;
     display: flex;
-    height: 25%;
-    margin: 4% 1% 0 auto;
-    width: 30%;
+    height: 21%;
+    /* margin: 4% 1% 0 auto; */
+    width: 33%;
+    position: absolute;
+    right: 3%;
+    font-size: 0.7em;
 }
 
 .c-serch_box{

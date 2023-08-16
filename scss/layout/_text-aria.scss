@@ -1,0 +1,13 @@
+@use "../foundation/variable" as *;
+
+.l-text-aria{
+margin: 4% 6%;
+
+
+    & h2{
+    
+    }
+    & p{
+        font-size: 0.8em;
+    }
+}
