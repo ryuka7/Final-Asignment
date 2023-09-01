@@ -1,0 +1,79 @@
+@use "../../foundation/variable" as *;
+.p-pagenation--wrapper{
+    display: flex;
+    color: $text-glay;
+    align-items: center;
+    justify-content: center;
+    margin-top: 130px;
+    margin-bottom: 60px;
+}
+
+.p-pagenation{
+    display: flex;
+    align-items: center;
+
+    & :first-child a span {
+        background-color: $grid-card;
+        color: $white;
+
+    }
+
+}
+
+.p-pagenation__Item{
+    display: flex;
+    width: 40px;
+    height: 30px;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+
+    & a{
+        text-decoration: none;
+        color: $text-glay;
+    }
+    & span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $white;
+        width: 30px;
+        height: 30px;
+        border: solid 1px;
+        margin-left: 5px;
+    }
+
+}
+
+.p-arrow{
+    position: relative;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.p-arrow::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    margin-top: -5px;
+    border-top: solid 1px $text-glay;  
+    border-right: solid 1px $text-glay;  
+    transform: rotate(225deg);
+    position: absolute;
+    top: 33%;
+    right: 0px;
+    
+}
+.p-arrow::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    margin-top: -5px;
+    border-top: solid 1px $text-glay;  
+    border-right: solid 1px $text-glay;  
+    transform: rotate(225deg);
+    position: absolute;
+    top: 33%;
+    right: -5px;
+
+}

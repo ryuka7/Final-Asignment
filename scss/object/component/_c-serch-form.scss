@@ -11,7 +11,7 @@
 }
 
 .c-serch_box{
-    width: 80%;
+    width: 270px;
     margin-right: 4%;
     padding-left: 10%;
     border: solid black 1px;
@@ -22,8 +22,8 @@
 .c-serch-form::after{
 background-image: url(../../../images/serch-icon.svg);
 background-size: contain;
-width: 10%;
-height: 80%;
+width: 25px;
+height: 25px;
 top: 10%;
 left: 1%;
 position: absolute;

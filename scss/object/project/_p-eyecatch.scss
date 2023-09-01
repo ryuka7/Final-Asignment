@@ -1,0 +1,17 @@
+
+.p-single-eyecatch--Wrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.p-single-eyecatch{
+    background-image: url(../../../images/other.png);
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    height: auto;
+    min-height: 398px;
+    margin: 55px;
+}

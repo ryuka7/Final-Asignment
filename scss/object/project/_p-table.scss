@@ -1,0 +1,26 @@
+.p-table--Wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+    margin-bottom: 55px;
+    width: auto;
+    min-width: 100%;
+    height: auto;
+}
+
+.p-table{
+    width: 90%;
+    border-collapse: collapse;
+    tr{
+        td{
+            height: 65px;
+            width: 66%;
+            border: solid black 1px;
+            padding-left: 40px;
+        }
+        td:first-child{
+            width: 33%;
+        }
+
+    }
+}

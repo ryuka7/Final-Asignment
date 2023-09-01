@@ -1,0 +1,28 @@
+.c-horizonline{
+    position: relative;
+}
+
+.c-horizonline::after{
+    position: absolute;
+    display: flex;
+    width: 40px;
+    height: 1px;
+    border: solid white;
+    content: "";
+    left: 20px;
+    top: 30px;
+}
+
+.c-horizonline__large{
+    position: relative;
+}
+
+.c-horizonline__large::after{
+    position: absolute;
+    display: flex;
+    width: 40px;
+    height: 1px;
+    border: solid white;
+    content: "";
+    left: 70px;
+}

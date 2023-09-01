@@ -1,0 +1,22 @@
+@use"../../foundation/variable"as *;
+
+.c-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 55px;
+    margin-bottom: 55px;
+    width: auto;
+    min-width: 345px;
+    height: auto;
+    min-height: 90px;
+    border: solid black 1px;
+    border-radius: 20px;
+    background-color: #f2edec ;
+    background: linear-gradient( #ded8d3 100%);
+    font-weight: bold;
+
+    & a{
+        color: $grid-card;
+    }
+}

@@ -1,0 +1,27 @@
+@use"../../foundation/variable" as *;
+.p-quote{
+background-color: $backglound-glay;
+background-size: contain;
+height: auto;
+width: 90%;
+font-size: 0.9em;
+
+
+    & p{
+        margin: 25px;
+        
+    }
+
+    & code pre{
+        margin: 50px 0;
+    }
+}
+
+.p-quote--Wrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

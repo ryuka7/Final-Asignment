@@ -1,0 +1,19 @@
+.p-list{
+    margin: 55px;
+
+    ul{
+        margin: 0.5em 0;
+        padding-left: 40px;
+        list-style-type: disc;
+        list-style: none;
+    }
+    ol{
+        margin: 1em 0;
+        padding-left: 40px;
+        list-style-type: decimal;
+    }
+}
+
+.p-list__ul{
+    margin-top: 60px;
+}

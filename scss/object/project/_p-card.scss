@@ -1,0 +1,76 @@
+@use "../../foundation/variable" as *;
+
+.p-card{
+    display: flex;
+    position: relative;
+    width: 88%;
+    height: auto;
+    min-height: 350px;
+    margin: 3% 6%;
+}
+
+.p-image{
+    background-image: url(../../../images/repeat-grid.png);
+    background-size: cover;
+    width: auto;
+    height: auto;
+    left: 0;
+    min-height: 350px;
+    min-width: 50%;
+    display: flex;
+}
+
+.p-blown{
+    background-color: #3C2B1C;
+    display: flex;
+    color: white;
+    /* justify-content: center; */
+    min-height: 100%;
+    width: 50%;
+    right: 0;
+
+    & h2{
+        margin: 35px;
+
+    }
+
+    & h3{
+        margin: 0 0 10px 35px;
+
+    }
+
+    & p{
+        margin: 35px;
+        margin-top: 0;
+        font-size: 0.9rem;
+
+    }
+}
+
+.p-blown__text{
+    display: block;
+
+}
+
+.p-card__button{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+    width: auto;
+    max-width: 270px;
+    background-color: $white;
+    color: $text-glay;
+    border-radius: 40px;
+    margin: 0 auto;
+    
+    & a{
+        text-decoration: none;
+        list-style: none;
+        color: $text-glay;
+    
+
+    }
+
+}
