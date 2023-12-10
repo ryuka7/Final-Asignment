@@ -9,14 +9,26 @@
 }
 
 .p-content--TakeOut{
+    // 訂正部分１２／９
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // ここまで訂正部分
     background-image: url(../../../images/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png);
     background-size: cover;
     background-position: center;
+    // ここからテスト
+    // display: grid;
+    // grid-template-columns: 1fr;
+    // grid-template-rows: 1fr 1fr;
+    // gap: 10px;
+    // ここまでテスト
     width: 40.5%;
     height: auto;
     min-height: 890px;
     margin-top: 6%;
     margin-left: 6%;
+    
 }
 
 .p-content__item--wrapper{
@@ -49,6 +61,11 @@
 }
 
 .p-content--EatIn{
+    // 訂正部分１２／９
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    // ここまで訂正部分
     background-image: url(../../../images/burgers-and\ potates.png);
     background-size: cover;
     background-position: center;
