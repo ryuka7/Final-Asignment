@@ -286,6 +286,7 @@
 
 .c-horizonline {
   position: relative;
+  top: 0.5%;
 }
 
 .c-horizonline::after {
