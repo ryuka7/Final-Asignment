@@ -8,7 +8,9 @@
 .l-grid{
     display: grid;
     grid-template-columns: 81% 19%;
-    
+    @media screen and (max-width: 834px) {
+        grid-template-columns: 100%;
+    }
 }
 
 .l-main{

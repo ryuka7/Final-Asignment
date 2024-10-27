@@ -7,8 +7,10 @@
     width: 100%;
     background-color: $submenu-color;
     color: $text-glay;
-    @media screen and(min-width:960) {
+
+    @media screen and (min-width: 834px) {
         display: none;
+        grid-column: inherit;
     }
 }
 
@@ -32,3 +34,4 @@
     margin-left: 20%;
     line-height: 2.5em;
 }
+

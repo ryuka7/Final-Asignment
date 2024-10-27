@@ -6,13 +6,18 @@
     align-items: center;
     height: 150px;
     background-color: $header-color;
+
+@media screen and (max-width: 834px) {
+    width:100%;
+    height: 217px;
+    }
 }
 
-.l-nav{
+.l-header__nav{
     height: 100%;
 }
 
-.l-title{
+.l-header__title{
     display: flex;
     height: 100%;
     font-size:3em;
@@ -20,4 +25,5 @@
     align-items: center;
     padding: 0% 15%;
 }
+
 

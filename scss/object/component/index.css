@@ -1,0 +1,111 @@
+.c-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 55px;
+  margin-bottom: 55px;
+  width: auto;
+  min-width: 345px;
+  height: auto;
+  min-height: 90px;
+  border: solid black 1px;
+  border-radius: 20px;
+  background-color: #f2edec;
+  background: linear-gradient(#ded8d3 100%);
+  font-weight: bold;
+}
+.c-button a {
+  color: #3C2B1C;
+}
+
+.c-serch-form {
+  display: flex;
+  height: 21%;
+  /* margin: 4% 1% 0 auto; */
+  width: 33%;
+  position: absolute;
+  right: 3%;
+  font-size: 0.7em;
+}
+
+.c-serch_box {
+  width: 270px;
+  margin-right: 4%;
+  padding-left: 10%;
+  border: solid black 1px;
+  border-radius: 6px;
+  background-color: #ffffff;
+}
+
+.c-serch-form::after {
+  background-image: url(../../../images/serch-icon.svg);
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  top: 10%;
+  left: 1%;
+  position: absolute;
+  z-index: 5000;
+  content: "";
+  opacity: 0.8;
+}
+
+.c-serch_button {
+  width: 30%;
+  border: solid black 1px;
+  border-radius: 6px;
+  background-color: #f2edec;
+  background: linear-gradient(#ded8d3 100%);
+}
+
+.c-title {
+  display: flex;
+  color: #ffffff;
+  font-size: 2.5em;
+  margin-left: 2%;
+  margin-top: 5%;
+  line-height: 1;
+}
+
+.c-title ::after {
+  border: solid 1px;
+  color: #ffffff;
+  width: 2%;
+  height: 1px;
+}
+
+.c-strong {
+  display: block;
+  margin-left: 55px;
+  margin-bottom: 200px;
+}
+
+.c-horizonline {
+  position: relative;
+  top: 0.5%;
+}
+
+.c-horizonline::after {
+  position: absolute;
+  display: flex;
+  width: 40px;
+  height: 1px;
+  border: solid white;
+  content: "";
+  left: 20px;
+  top: 30px;
+}
+
+.c-horizonline__large {
+  position: relative;
+}
+
+.c-horizonline__large::after {
+  position: absolute;
+  display: flex;
+  width: 40px;
+  height: 1px;
+  border: solid white;
+  content: "";
+  left: 70px;
+}/*# sourceMappingURL=index.css.map */
