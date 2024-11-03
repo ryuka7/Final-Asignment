@@ -6,6 +6,14 @@
     justify-content: center;
     margin-top: 130px;
     margin-bottom: 60px;
+    @media screen and (max-width: 375px) {
+        display: none;
+        .p-pagenation__sp{
+            display: flex;
+            justify-content: space-between;
+        }
+
+    }
 }
 
 .p-pagenation{
@@ -15,7 +23,6 @@
     & :first-child a span {
         background-color: $grid-card;
         color: $white;
-
     }
 
 }
@@ -41,6 +48,10 @@
         height: 30px;
         border: solid 1px;
         margin-left: 5px;
+    }
+    
+    @media screen and (max-width: 375px) {
+        display: none;
     }
 
 }
@@ -77,3 +88,67 @@
     right: -5px;
 
 }
+.p-arrow__revers{
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.p-arrow__revers::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    margin-top: -5px;
+    border-top: solid 1px $text-glay;  
+    border-right: solid 1px $text-glay;  
+    transform: rotate(45deg);
+    position: absolute;
+    top: 33%;
+    right: 0px;
+    @media screen and (max-width: 375px) {
+        right: 25px;
+    }
+    
+}
+.p-arrow__revers::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    margin-top: -5px;
+    border-top: solid 1px $text-glay;  
+    border-right: solid 1px $text-glay;  
+    transform: rotate(45deg);
+    position: absolute;
+    top: 33%;
+    right: -5px;
+@media screen and (max-width: 375px) {
+    right: 20px;
+}
+
+
+
+}
+
+.p-pagenation__sp {
+    display: flex;
+    justify-content: space-between; /* 両端いっぱいに配置 */
+    align-items: center;
+    width: 100%;
+    margin: 40px 0 20px 0;
+    @media screen and (min-width: 376px) {
+        display: none;
+    }
+
+    h4{
+    margin:0 10px;
+    font-weight: 100;
+    margin-right: 25px;
+    }
+}
+
+.p-pagination-item {
+    display: flex;
+    align-items: center;
+}
+
+

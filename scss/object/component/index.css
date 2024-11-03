@@ -14,6 +14,12 @@
   background: linear-gradient(#ded8d3 100%);
   font-weight: bold;
 }
+@media screen and (max-width: 375px) {
+  .c-button {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+}
 .c-button a {
   color: #3C2B1C;
 }
@@ -27,6 +33,20 @@
   right: 3%;
   font-size: 0.7em;
 }
+@media screen and (max-width: 834px) {
+  .c-serch-form {
+    width: 66%;
+    height: 23%;
+    right: 50%;
+    margin-bottom: 30px;
+    transform: translateX(50%);
+  }
+}
+@media screen and (max-width: 375px) {
+  .c-serch-form {
+    width: 80%;
+  }
+}
 
 .c-serch_box {
   width: 270px;
@@ -35,6 +55,12 @@
   border: solid black 1px;
   border-radius: 6px;
   background-color: #ffffff;
+}
+@media screen and (max-width: 834px) {
+  .c-serch_box {
+    height: 90%;
+    width: 70%;
+  }
 }
 
 .c-serch-form::after {
@@ -49,6 +75,12 @@
   content: "";
   opacity: 0.8;
 }
+@media screen and (max-width: 834px) {
+  .c-serch-form::after {
+    width: 40px;
+    height: 40px;
+  }
+}
 
 .c-serch_button {
   width: 30%;
@@ -56,6 +88,19 @@
   border-radius: 6px;
   background-color: #f2edec;
   background: linear-gradient(#ded8d3 100%);
+}
+@media screen and (max-width: 834px) {
+  .c-serch_button {
+    height: 90%;
+    width: 25%;
+    font-size: 18px;
+    padding-top: 4px;
+  }
+}
+@media screen and (max-width: 834px) {
+  .c-serch_button {
+    width: 30%;
+  }
 }
 
 .c-title {
@@ -108,4 +153,10 @@
   border: solid white;
   content: "";
   left: 70px;
+}
+@media screen and (max-width: 834px) {
+  .c-horizonline__large::after {
+    width: 80px;
+    bottom: 15px;
+  }
 }/*# sourceMappingURL=index.css.map */

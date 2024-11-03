@@ -14,4 +14,14 @@
     height: auto;
     min-height: 398px;
     margin: 55px;
+@media screen and (max-width: 834px) {
+    min-height: 268px;
+}
+@media screen and (max-width: 375px) {
+    max-width: 335px;
+    max-height: 124px;
+    min-height: 124px;
+    margin: 30px 20px;
+}
+
 }

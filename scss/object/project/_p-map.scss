@@ -7,20 +7,31 @@
     width: auto;
     height: auto;
     min-width: 100%;
-    min-height: 491px;
+    min-height: 650px;
     position: relative;
     margin-top: 6%;
+@media screen and (max-width: 834px) {
+    min-height: unset;
     
+}
+
 }
 .p-map__shadow{
     display: flex;
     background: rgba(0, 0, 0, 0.4);
     width: 100%;
     height: auto;
-    min-height: 491px;
+    min-height: 650px;
     top: 0;
     left: 0;
     z-index: 1000;
+    @media screen and (max-width: 834px) {
+        min-height: unset;
+        max-height: 450px;
+    }
+    @media screen and (max-width:375px){
+        min-height: 691px;
+    }
 }
 
 .p-map__shadow--dark{
@@ -32,6 +43,16 @@
     top: 0;
     left: 0;
     z-index: 1000;
+    @media screen and (max-width: 834px) {
+        min-height: unset;
+        max-height: 450px;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.4);
+    }
+    @media screen and (max-width:375px){
+        height: 415px;
+        padding-left: 30px;
+    }
 
     & h2{
         color: $white;
@@ -41,9 +62,25 @@
 
     & p{
         color: $white;
-        font-size: 0.8em;
+        font-size: 1rem;
         width: 70%;
         margin: 10%;
+        line-height: 2em;
+        @media screen and (max-width: 834px) {
+            width: auto;
+            margin: 5%;
+            line-height: 2.5em;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 7; 
+        }
+        @media screen and (max-width:375px){
+            overflow: unset;
+            font-size: small;
+            line-height: 2.2em;
+            width: 80%;
+        }
     }
-
 }

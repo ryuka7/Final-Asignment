@@ -15,6 +15,12 @@
     background-color: #f2edec ;
     background: linear-gradient( #ded8d3 100%);
     font-weight: bold;
+    
+@media screen and (max-width: 375px) {
+        margin-left: 4%;
+        margin-right: 4%;
+      }
+
 
     & a{
         color: $grid-card;

@@ -4,12 +4,13 @@
     display: flex;
     position: relative;
     justify-content: space-between;
-    
+    @media screen and (max-width:375px){
+        flex-direction: column;
+    }
 
 }
 
 .p-content--TakeOut{
-    // 訂正部分１２／９
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -28,13 +29,20 @@
     min-height: 890px;
     margin-top: 6%;
     margin-left: 6%;
-    
+    @media screen and (max-width: 834px) {
+        min-height: unset;
+       height: 681px;
+    }    
+    @media screen and (max-width:375px){
+        width: 90%;
+        margin-left: 20px;
+    }
 }
 
 .p-content__item--wrapper{
     width: auto;
     height: auto;
-    margin-top: 527px;
+    // margin-top: 527px;
 }
 
 .p-content__item{
@@ -44,7 +52,16 @@
     margin: 15px;
     background-color: $white;
     opacity: 0.7;
-   
+@media screen and (max-width: 1000px) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4; 
+    line-height: 1.5em; 
+    height: calc(1.5em * 4);
+}
+
     
         & p{
             font-size: 0.8em;
@@ -52,7 +69,7 @@
             padding-right: 1%;
             padding-bottom: 10px;
 
-    }
+        }
         & h3{
             margin-top: 2%;
             padding: 3% 0% 0% 4%;
@@ -74,4 +91,12 @@
     min-height: 890px;
     margin-top: 6%;
     margin-right: 6%;
+    @media screen and (max-width: 834px) {
+        min-height: unset;
+        height: 681px;
+    }    
+    @media screen and (max-width:375px){
+        width: 90%;
+        margin-left: 20px;
+    }
 }
