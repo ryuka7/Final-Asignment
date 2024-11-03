@@ -159,4 +159,10 @@
     width: 80px;
     bottom: 15px;
   }
+}
+@media screen and (max-width: 375px) {
+  .c-horizonline__large::after {
+    bottom: 10px;
+    left: 30px;
+  }
 }/*# sourceMappingURL=index.css.map */
