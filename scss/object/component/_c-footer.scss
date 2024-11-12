@@ -1,5 +1,5 @@
-
-.l-footer{
+@use "../../foundation/variable" as *; 
+.c-footer{
     display: flex;
     background-image: url(../../images/\ footer-blown.png);
     width: 100vw;
@@ -10,10 +10,16 @@
     
 }
 
-.l-footer__text{
+.c-footer__text{
     display: block;
     color: #fff;
     margin: 2%;
+    @include respond-to(medium) {
+        margin: 3%;
+    }
+    @include respond-to(small) {
+        margin: 8%;
+    }
     
     & small{
         display: flex;

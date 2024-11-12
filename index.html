@@ -13,17 +13,18 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 
     <title>Document</title>
+    <script src="./script.js" defer></script>
 </head>
 <body class="l-body">
     <div class="l-grid">
         <div class="l-main__wrapper">
             <!-- ヘッダー部分 -->
-            <header class="l-header">
-                <div class="l-header__mobilemenuIcon">
+            <header class="c-header">
+                <div class="c-header__mobilemenuIcon">
                     Menu
                 </div>
-                <nav class="l-header__nav">
-                    <span class="l-header__title">
+                <nav class="c-header__nav">
+                    <span class="c-header__title">
                         Hamburuger
                     </span>
                 </nav>
@@ -151,37 +152,11 @@
                 </section>
     
         <!-- フッター -->
-        <footer class="l-footer">
-            <div class="l-footer__text">
+        <footer class="c-footer">
+            <div class="c-footer__text">
                 <a href="">ショップ情報</a>｜<a href="">ヒストリー</a>
                 <small>Copyright:Raise Tech</small>
             </div>
         </footer>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const sideMenu = document.querySelector('.l-side-menu');
-                const mobileMenuIcon = document.querySelector('.l-header__mobilemenuIcon');
-                const mobileMenuCloseIcon = document.querySelector('.l-side-menu__mobile__icon');
-                const mobileBg = document.querySelector('.l-side-menu__bg');
-
-                mobileMenuIcon.addEventListener('click', function() {
-                    sideMenu.classList.add('active');
-                    mobileBg.classList.add('active');
-                });
-            
-                mobileMenuCloseIcon.addEventListener('click', function() {
-                    sideMenu.classList.remove('active');
-                    mobileBg.classList.remove('active');
-                });
-            
-                // 画面サイズが変更されたときの処理
-                window.addEventListener('resize', function() {
-                    if (window.innerWidth >= 835) {
-                        sideMenu.classList.remove('active');
-                        mobileBg.classList.remove('active');
-                    }
-                });
-            });
-        </script>        
 </body>
 </html>

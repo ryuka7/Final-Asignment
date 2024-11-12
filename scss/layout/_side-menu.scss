@@ -7,13 +7,15 @@
   width: 100%;
   background-color: $submenu-color;
   color: $text-glay;
-  transition: all 0.3s;
 
   @include respond-to(medium) {
     grid-column: inherit;
     transform: translateX(100%);
+    overflow: hidden;
     height: 0;
     transition: all 0.3s ease;
+    position: absolute;
+    transform-origin: 100% 50%;
   }
   &__mobile__icon {
     display: none;
@@ -53,12 +55,12 @@
         height: 100%;
         z-index: 10000;
         transform: translateX(0%);
-        transition: 0.3s ease;
+        transition: 0.3s ease-in-out;
         position: absolute;
         right: 0;
         @include respond-to(small) {
             // grid-template-columns: 10% 90%;
-            width: 90%;
+            width: 90vw;
         }
         .l-side-menu__mobile__icon{
             display: block;
@@ -69,6 +71,9 @@
         .l-menu{
             grid-column: 2;
         }
+    }
+    .inactive{
+      height: 100%;
     }
 }
 
@@ -106,8 +111,9 @@ left: 0;
 height: 100%;
 width: 100%;
 opacity: 0.5;
-z-index: 1000;
+z-index: 5000;
 display: none;
+
 
     &.active{
     display: block;

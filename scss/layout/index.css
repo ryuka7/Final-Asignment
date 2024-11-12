@@ -1,87 +1,3 @@
-.l-footer {
-  display: flex;
-  background-image: url(../../images/\ footer-blown.png);
-  width: 100vw;
-  height: 120px;
-  justify-content: center;
-  z-index: 4000;
-}
-
-.l-footer__text {
-  display: block;
-  color: #fff;
-  margin: 2%;
-}
-.l-footer__text small {
-  display: flex;
-  justify-content: center;
-  margin: 15%;
-}
-.l-footer__text a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.l-header {
-  display: flex;
-  position: relative;
-  align-items: center;
-  height: 150px;
-  background-color: #FFF7EF;
-}
-@media (max-width: 834px) {
-  .l-header {
-    width: 100%;
-    height: 217px;
-    flex-direction: column-reverse;
-  }
-}
-
-.l-header__nav {
-  height: 100%;
-}
-
-.l-header__title {
-  display: flex;
-  height: 100%;
-  font-size: 3em;
-  font-weight: 900;
-  color: #707070;
-  align-items: center;
-  padding: 0% 15%;
-}
-@media (max-width: 834px) {
-  .l-header__title {
-    padding: 0 0 35%;
-    font-size: xx-large;
-  }
-}
-
-.l-header__mobilemenuIcon {
-  display: none;
-}
-@media (max-width: 834px) {
-  .l-header__mobilemenuIcon {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin-top: 30px;
-    margin-right: 20px;
-    font-size: xx-large;
-    color: #707070;
-    font-weight: bold;
-    cursor: pointer;
-  }
-}
-@media (max-width: 375px) {
-  .l-header__mobilemenuIcon {
-    font-size: larger;
-    margin-top: 10px;
-    margin-right: 10px;
-  }
-}
-
 .l-body {
   position: relative;
   background-color: #FFFDFA;
@@ -229,14 +145,16 @@
   width: 100%;
   background-color: #F2EDE9;
   color: #707070;
-  transition: all 0.3s;
 }
 @media (max-width: 834px) {
   .l-side-menu {
     grid-column: inherit;
     transform: translateX(100%);
+    overflow: hidden;
     height: 0;
     transition: all 0.3s ease;
+    position: absolute;
+    transform-origin: 100% 50%;
   }
 }
 .l-side-menu__mobile__icon {
@@ -270,13 +188,13 @@
   height: 100%;
   z-index: 10000;
   transform: translateX(0%);
-  transition: 0.3s ease;
+  transition: 0.3s ease-in-out;
   position: absolute;
   right: 0;
 }
 @media (max-width: 375px) {
   .l-side-menu.active {
-    width: 90%;
+    width: 90vw;
   }
 }
 .l-side-menu.active .l-side-menu__mobile__icon {
@@ -287,6 +205,9 @@
 }
 .l-side-menu.active .l-menu {
   grid-column: 2;
+}
+.l-side-menu .inactive {
+  height: 100%;
 }
 
 .l-menu_title {
@@ -319,7 +240,7 @@
   height: 100%;
   width: 100%;
   opacity: 0.5;
-  z-index: 1000;
+  z-index: 5000;
   display: none;
 }
 .l-side-menu__bg.active {
