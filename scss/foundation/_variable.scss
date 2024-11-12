@@ -7,3 +7,19 @@ $white: #ffffff;
 $black: #000000;
 $grid-card: #3C2B1C;
 $backglound-glay:#f5f5f5;
+
+// ブレイクポイント書く画面サイズの変数
+$breakpoint-small: 375px;
+$breakpoint-medium: 834px;
+$breakpoint-large: 1200px;
+
+// ブレイクポイント用のmixin
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == small {
+    @media (max-width: #{$breakpoint-small}) { @content; }
+  } @else if $breakpoint == medium {
+    @media (max-width: #{$breakpoint-medium}) { @content; }
+  } @else if $breakpoint == large {
+    @media (max-width: #{$breakpoint-large}) { @content; }
+  }
+}

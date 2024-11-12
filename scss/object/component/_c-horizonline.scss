@@ -1,3 +1,4 @@
+@use "../../foundation/variable" as *;
 .c-horizonline{
     position: relative;
     top: 0.5%;
@@ -26,11 +27,11 @@
     border: solid white;
     content: "";
     left: 70px;
-    @media screen and (max-width: 834px) {
+    @include respond-to(medium) {
         width: 80px;
         bottom: 15px;
     }    
-@media screen and (max-width: 375px) {
+    @include respond-to(small) {
         bottom: 10px;
         left: 30px;
     }

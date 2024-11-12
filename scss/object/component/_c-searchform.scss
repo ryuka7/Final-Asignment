@@ -1,6 +1,5 @@
 @use "../../foundation/variable" as v;
-
-.c-serch-form{
+.c-searchform{
     display: flex;
     height: 21%;
     /* margin: 4% 1% 0 auto; */
@@ -8,31 +7,32 @@
     position: absolute;
     right: 3%;
     font-size: 0.7em;
-@media screen and (max-width: 834px) {
+    @include v.respond-to(medium) {
     width: 66%;
     height: 23%;
     right: 50%;
     margin-bottom: 30px;
     transform: translateX(50%);
     }
-    @media screen and (max-width: 375px){
+    @include v.respond-to(small) {
         width: 80%;
     }
+    
 }
 
-.c-serch_box{
+.c-searchform__box{
     width: 270px;
     margin-right: 4%;
     padding-left: 10%;
     border: solid black 1px;
     border-radius: 6px;
     background-color: v.$white;
-@media screen and (max-width: 834px) {
+    @include v.respond-to(medium) {
     height: 90%;
     width: 70%;
 }
 }
-.c-serch-form::after{
+.c-searchform::after{
 background-image: url(../../../images/serch-icon.svg);
 background-size: contain;
 width: 25px;
@@ -43,25 +43,25 @@ position: absolute;
 z-index: 5000;
 content: "";
 opacity: 0.8;
-@media screen and (max-width: 834px) {
+@include v.respond-to(medium) {
     width: 40px;
     height: 40px;
     }
 }
 
-.c-serch_button{
+.c-searchform__button{
     width: 30%;
     border: solid black 1px;
     border-radius: 6px;
     background-color: #f2edec ;
     background: linear-gradient( #ded8d3 100%);
-    @media screen and (max-width: 834px) {
+    @include v.respond-to(medium) {
         height: 90%;
         width: 25%;
         font-size: 18px;
         padding-top: 4px;
     }
-    @media screen and (max-width: 834px) {
+    @include v.respond-to(medium) {
         width: 30%;
     }    
 }

@@ -1,88 +1,115 @@
 @use "../foundation/variable" as *;
 
-.l-side-menu{
-    grid-column: 2/3;
-    display: block;
-    height: 100%;
-    width: 100%;
-    background-color: $submenu-color;
-    color: $text-glay;
+.l-side-menu {
+  grid-column: 2/3;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: $submenu-color;
+  color: $text-glay;
+  transition: all 0.3s;
 
-    @media screen and (max-width: 834px) {
-        display: none;
-        grid-column: inherit;
-    }
-    @media screen and (max-width:375px){
-    }
-}
-
-.l-menu_title{
-    margin: 16%;
-}
-.l-menu{
-    list-style: none;
-    text-decoration: none;
-
-    & li{
-        list-style: none;
-    }
-}
-
-.l-menu_subtitle{
-    margin: 16%;
-}
-
-.l-menu_list{
-    margin-left: 20%;
-    line-height: 2.5em;
-}
-.l-side-menu__mobile{
+  @include respond-to(medium) {
+    grid-column: inherit;
+    transform: translateX(100%);
+    height: 0;
+    transition: all 0.3s ease;
+  }
+  &__mobile__icon {
     display: none;
-    &__item{
-        grid-column: 2;
-        background-color: $submenu-color;
-        ul{
-            color: $text-glay;
-        }
-    }
-    &__icon{
-        position: relative;
-        width: 40px;
-        height: 40px;
-        cursor: pointer;
-        margin: 10px;
-        margin-left: auto;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin: 10px;
+    margin-left: auto;
 
-        &::before,&::after {
-            content: '';
-            position: absolute;
-            width: 40px;
-            height: 4px;
-            background-color: $text-glay;
-            top: 50%;
-            right: 0;
-            transform-origin: center; 
-        }
-    
-        &::before {
-          transform: rotate(45deg);
-        }
-    
-        &::after {
-          transform: rotate(-45deg);
-        }
-      }
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 4px;
+      background-color: $text-glay;
+      top: 50%;
+      right: 0;
+      transform-origin: center;
     }
-.l-side-menu__mobile.active{
-    display: grid;
-    
-    grid-template-columns: 50% 50%;
-    width: 100vw;
-    height: 100%;
-    z-index: 10000;
-    background-color: #000;
-    position: absolute;
-    @media screen and (max-width:375px){
-        grid-template-columns: 10% 90%;
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  // .l-side-menuがアクティブ時のスタイル
+  &.active {
+        display: block;
+        // grid-template-columns: 50% 50%;
+        width: 50vw;
+        height: 100%;
+        z-index: 10000;
+        transform: translateX(0%);
+        transition: 0.3s ease;
+        position: absolute;
+        right: 0;
+        @include respond-to(small) {
+            // grid-template-columns: 10% 90%;
+            width: 90%;
+        }
+        .l-side-menu__mobile__icon{
+            display: block;
+        }
+        .l-menu_title {
+         display: none;
+        }
+        .l-menu{
+            grid-column: 2;
+        }
+    }
+}
+
+// 既存のスタイル
+.l-menu_title {
+margin: 22% 12%;
+font-size: 1.5em;
+color: $text-glay; 
+  
+}
+
+ .l-menu{
+  list-style: none;
+  text-decoration: none;
+
+  & li {
+    list-style: none;
+  }
+}
+
+.l-menu_subtitle {
+  margin: 6% 12%;
+}
+
+.l-menu_list {
+  margin-left: 20%;
+  line-height: 2.5em;
+}
+
+.l-side-menu__bg{
+background-color: #000;
+// grid-column: 1;
+position: absolute;
+left: 0;
+height: 100%;
+width: 100%;
+opacity: 0.5;
+z-index: 1000;
+display: none;
+
+    &.active{
+    display: block;
     }
 }

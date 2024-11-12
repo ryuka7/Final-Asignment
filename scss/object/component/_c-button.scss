@@ -16,7 +16,7 @@
     background: linear-gradient( #ded8d3 100%);
     font-weight: bold;
     
-@media screen and (max-width: 375px) {
+    @include respond-to(small) {
         margin-left: 4%;
         margin-right: 4%;
       }

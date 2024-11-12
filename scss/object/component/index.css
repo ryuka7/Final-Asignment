@@ -14,7 +14,7 @@
   background: linear-gradient(#ded8d3 100%);
   font-weight: bold;
 }
-@media screen and (max-width: 375px) {
+@media (max-width: 375px) {
   .c-button {
     margin-left: 4%;
     margin-right: 4%;
@@ -24,7 +24,7 @@
   color: #3C2B1C;
 }
 
-.c-serch-form {
+.c-searchform {
   display: flex;
   height: 21%;
   /* margin: 4% 1% 0 auto; */
@@ -33,8 +33,8 @@
   right: 3%;
   font-size: 0.7em;
 }
-@media screen and (max-width: 834px) {
-  .c-serch-form {
+@media (max-width: 834px) {
+  .c-searchform {
     width: 66%;
     height: 23%;
     right: 50%;
@@ -42,13 +42,13 @@
     transform: translateX(50%);
   }
 }
-@media screen and (max-width: 375px) {
-  .c-serch-form {
+@media (max-width: 375px) {
+  .c-searchform {
     width: 80%;
   }
 }
 
-.c-serch_box {
+.c-searchform__box {
   width: 270px;
   margin-right: 4%;
   padding-left: 10%;
@@ -56,14 +56,14 @@
   border-radius: 6px;
   background-color: #ffffff;
 }
-@media screen and (max-width: 834px) {
-  .c-serch_box {
+@media (max-width: 834px) {
+  .c-searchform__box {
     height: 90%;
     width: 70%;
   }
 }
 
-.c-serch-form::after {
+.c-searchform::after {
   background-image: url(../../../images/serch-icon.svg);
   background-size: contain;
   width: 25px;
@@ -75,30 +75,30 @@
   content: "";
   opacity: 0.8;
 }
-@media screen and (max-width: 834px) {
-  .c-serch-form::after {
+@media (max-width: 834px) {
+  .c-searchform::after {
     width: 40px;
     height: 40px;
   }
 }
 
-.c-serch_button {
+.c-searchform__button {
   width: 30%;
   border: solid black 1px;
   border-radius: 6px;
   background-color: #f2edec;
   background: linear-gradient(#ded8d3 100%);
 }
-@media screen and (max-width: 834px) {
-  .c-serch_button {
+@media (max-width: 834px) {
+  .c-searchform__button {
     height: 90%;
     width: 25%;
     font-size: 18px;
     padding-top: 4px;
   }
 }
-@media screen and (max-width: 834px) {
-  .c-serch_button {
+@media (max-width: 834px) {
+  .c-searchform__button {
     width: 30%;
   }
 }
@@ -154,13 +154,13 @@
   content: "";
   left: 70px;
 }
-@media screen and (max-width: 834px) {
+@media (max-width: 834px) {
   .c-horizonline__large::after {
     width: 80px;
     bottom: 15px;
   }
 }
-@media screen and (max-width: 375px) {
+@media (max-width: 375px) {
   .c-horizonline__large::after {
     bottom: 10px;
     left: 30px;

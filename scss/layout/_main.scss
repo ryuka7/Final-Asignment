@@ -8,7 +8,7 @@
 .l-grid{
     display: grid;
     grid-template-columns: 81% 19%;
-    @media screen and (max-width: 834px) {
+    @include respond-to(medium) {
         grid-template-columns: 100%;
     }
 }
@@ -29,7 +29,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    @media screen and (max-width: 834px) {
+    @include respond-to(medium) {
         height: 285px;
     }
 }
@@ -56,7 +56,7 @@
     align-items: center;
     height: 180px;
     color: $white;
-    @media screen and (max-width: 834px) {
+    @include respond-to(medium) {
         min-height: 285px;
     }
 
@@ -91,7 +91,7 @@
     position: relative;
     display: flex;
     align-items: center;
-@media screen and (max-width: 375px) {
+    @include respond-to(small) {
     max-height: 225px;
     justify-content: center;
 }
@@ -116,7 +116,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    @media screen and (max-width: 375px) {
+    @include respond-to(small) {
         max-height: 225px;
         justify-content: center;
     }
