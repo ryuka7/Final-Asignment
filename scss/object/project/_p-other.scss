@@ -48,20 +48,22 @@
     height: auto;
     min-width: 54%;
     margin-left: 40px;
+    overflow: hidden;
     @media screen and (max-width: 834px) {
         margin-left: 20px;
         height: 100%;
-        overflow-y: auto;
         height: 15em;
         -webkit-line-clamp: 15;
         line-height: 1.5em;
         height: calc(1.5em * 15);
+        overflow: hidden;
     }
     @media screen and (max-width: 375px) {
     height: 9em;
     -webkit-line-clamp: 6;
     line-height: 1.5em;
     height: calc(1.5em * 6);
+    overflow: hidden;
     }
     & p{
         font-size: 0.8em;
@@ -77,21 +79,23 @@
     height: auto;
     min-width: 54%;
     margin-right: 40px;
+    overflow: hidden;
     
     @media screen and (max-width: 834px) {
         margin-right: 20px;
         height: 100%;
-        overflow-y: auto;
         height: 15em;
         -webkit-line-clamp: 15;
         line-height: 1.5em;
         height: calc(1.5em * 15);
+        overflow: hidden;
     }
     @media screen and (max-width: 375px) {
         height: 9em;
         -webkit-line-clamp: 6;
         line-height: 1.5em;
         height: calc(1.5em * 6);
+        overflow: hidden;
         }
     & p{
         font-size: 0.8em;

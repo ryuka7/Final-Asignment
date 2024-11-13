@@ -9,3 +9,7 @@
     
 
 }
+.scrollable-element {
+    overflow-y: auto; /* 縦方向のスクロールを許可 */
+    max-height: 100vh; /* 最大高さをビューポートの高さに設定 */
+}

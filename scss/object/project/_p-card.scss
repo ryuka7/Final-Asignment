@@ -13,7 +13,7 @@
 }
 }
 
-.p-image{
+.p-card__image{
     background-image: url(../../../images/repeat-grid.png);
     background-size: cover;
     width: auto;
@@ -25,13 +25,13 @@
 @media screen and (max-width: 375px) {
     min-height: 285px;
 }
-    .p-image {
+    .p-card__image {
         min-height: 250px;
         min-width: 100%;
     }
 }
 
-.p-brown{
+.p-card__brown{
     background-color: #3C2B1C;
     display: flex;
     color: white;
@@ -76,7 +76,7 @@
     }
 }
 
-.p-brown__text{
+.p-card__brown__text{
     display: block;
 
 }

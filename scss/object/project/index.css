@@ -209,7 +209,7 @@
   }
 }
 
-.p-image {
+.p-card__image {
   background-image: url(../../../images/repeat-grid.png);
   background-size: cover;
   width: auto;
@@ -220,16 +220,16 @@
   display: flex;
 }
 @media screen and (max-width: 375px) {
-  .p-image {
+  .p-card__image {
     min-height: 285px;
   }
 }
-.p-image .p-image {
+.p-card__image .p-card__image {
   min-height: 250px;
   min-width: 100%;
 }
 
-.p-brown {
+.p-card__brown {
   background-color: #3C2B1C;
   display: flex;
   color: white;
@@ -239,36 +239,36 @@
   right: 0;
 }
 @media screen and (max-width: 375px) {
-  .p-brown {
+  .p-card__brown {
     width: 100%;
     min-height: 350px;
   }
 }
-.p-brown h2 {
+.p-card__brown h2 {
   margin: 35px;
 }
 @media (max-width: 834px) {
-  .p-brown h2 {
+  .p-card__brown h2 {
     font-size: 1.2rem;
     margin-bottom: 25px;
   }
 }
-.p-brown h3 {
+.p-card__brown h3 {
   margin: 0 0 10px 35px;
 }
 @media (max-width: 834px) {
-  .p-brown h3 {
+  .p-card__brown h3 {
     margin-top: 20px;
     font-size: 1rem;
   }
 }
-.p-brown p {
+.p-card__brown p {
   margin: 35px;
   margin-top: 0;
   font-size: 0.9rem;
 }
 @media (max-width: 834px) {
-  .p-brown p {
+  .p-card__brown p {
     margin: 35px;
     margin-top: 0;
     font-size: 1rem;
@@ -277,7 +277,7 @@
   }
 }
 
-.p-brown__text {
+.p-card__brown__text {
   display: block;
 }
 
@@ -587,16 +587,17 @@
   height: auto;
   min-width: 54%;
   margin-left: 40px;
+  overflow: hidden;
 }
 @media screen and (max-width: 834px) {
   .p-other__Text {
     margin-left: 20px;
     height: 100%;
-    overflow-y: auto;
     height: 15em;
     -webkit-line-clamp: 15;
     line-height: 1.5em;
     height: 22.5em;
+    overflow: hidden;
   }
 }
 @media screen and (max-width: 375px) {
@@ -605,6 +606,7 @@
     -webkit-line-clamp: 6;
     line-height: 1.5em;
     height: 9em;
+    overflow: hidden;
   }
 }
 .p-other__Text p {
@@ -622,16 +624,17 @@
   height: auto;
   min-width: 54%;
   margin-right: 40px;
+  overflow: hidden;
 }
 @media screen and (max-width: 834px) {
   .p-other__Text--Reverse {
     margin-right: 20px;
     height: 100%;
-    overflow-y: auto;
     height: 15em;
     -webkit-line-clamp: 15;
     line-height: 1.5em;
     height: 22.5em;
+    overflow: hidden;
   }
 }
 @media screen and (max-width: 375px) {
@@ -640,6 +643,7 @@
     -webkit-line-clamp: 6;
     line-height: 1.5em;
     height: 9em;
+    overflow: hidden;
   }
 }
 .p-other__Text--Reverse p {

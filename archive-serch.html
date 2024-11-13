@@ -4,36 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./scss/ress.css">
+    <link rel="stylesheet" href="./css/ress.css">
 
-    <link rel="stylesheet" href="/scss/common.css">
+    <link rel="stylesheet" href="./css/common.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     
     <title>archive-sertch</title>
+    <script src="./script.js"defer></script>
 </head>
 <body class="l-body">
     <div class="l-grid">
         <div class="l-main__wrapper">
-    <!-- ヘッダー部分 -->
-            <header class="l-header">
-                <div class="l-header__mobilemenuIcon">
+            <!-- ヘッダー部分 -->
+            <header class="c-header">
+                <div class="c-header__mobilemenuIcon">
                     Menu
                 </div>
-                <nav class="l-header__nav">
-                    <h1 class="l-header__title">
+                <nav class="c-header__nav">
+                    <div class="c-header__title">
                         Hamburuger
-                    </h1>
+                    </div>
                 </nav>
-    <!--サーチフォーム  -->
-                <form class="c-serch-form">
-                    <input class="c-serch_box" type="text" value="チーズバーガー" />
-                    <input class="c-serch_button" type="submit" value="検索" />
+                <!--サーチフォーム  -->
+                <form class="c-searchform">
+                    <input class="c-searchform__box" type="text" value="チーズバーガー" />
+                    <input class="c-searchform__button" type="submit" value="検索" />
                 </form>
             </header>
-    <!--メイン部分  -->
+            <!--メイン部分  -->
             <main class="l-main">
                <section class="l-archive__mv">
                     <h2>Menu:</h2>
@@ -42,242 +43,177 @@
                     </div>
                </section>
 
-               <article class="l-text-aria">
+               <section class="l-text-aria">
                     <h2>小見出しが入ります</h2>
                     <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-               </article>
-    <!-- コンテンツ部分 -->
-        <section class="p-card">
-            <div class="p-image"></div>
-            <div class="p-brown">
-                <div class="p-brown__text">
-                    <h2>見出しが入ります</h2>
-                    <h3>小見出しが入ります</h3>
-
-                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-
-                    <div class="p-card__button">
-                        <a href="#">
-                                詳しく見る
-                        </a>
+               </section>
+                <!-- コンテンツ部分 -->
+                <section class="p-card">
+                    <div class="p-card__image"></div>
+                    <div class="p-card__brown">
+                        <div class="p-card__brown__text">
+                            <h2>見出しが入ります</h2>
+                            <h3>小見出しが入ります</h3>
+                            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります
+                                <div class="p-card__button">
+                                    <a href="#">
+                                            詳しく見る
+                                    </a>
+                                </div>
+                        </div>
                     </div>
-                </div>
-                
-            </div>
-        </section>
-
-        <section class="p-card">
-            <div class="p-image"></div>
-            <div class="p-brown">
-                <div class="p-brown__text">
-                    <h2>見出しが入ります</h2>
-                    <h3>小見出しが入ります</h3>
-                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                        <div class="p-card__button">
-                            <a href="#">
-                                    詳しく見る
-                            </a>
+                </section>
+                <section class="p-card">
+                    <div class="p-card__image"></div>
+                    <div class="p-card__brown">
+                        <div class="p-card__brown__text">
+                            <h2>見出しが入ります</h2>
+                            <h3>小見出しが入ります</h3>
+                            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります
+                                <div class="p-card__button">
+                                    <a href="#">
+                                            詳しく見る
+                                    </a>
+                                </div>
                         </div>
-                </div>
-            </div>
-
-        </section>
-
-        <section class="p-card">
-            <div class="p-image"></div>
-            <div class="p-brown">
-                <div class="p-brown__text">
-                    <h2>見出しが入ります</h2>
-                    <h3>小見出しが入ります</h3>
-                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                        <div class="p-card__button">
-                            <a href="#">
-                                    詳しく見る
-                            </a>
+                    </div>
+                </section>
+                <section class="p-card">
+                    <div class="p-card__image"></div>
+                    <div class="p-card__brown">
+                        <div class="p-card__brown__text">
+                            <h2>見出しが入ります</h2>
+                            <h3>小見出しが入ります</h3>
+                            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります
+                                <div class="p-card__button">
+                                    <a href="#">
+                                            詳しく見る
+                                    </a>
+                                </div>
                         </div>
-                </div>
-            </div>
-
-        </section>
-
-        <section class="p-card">
-            <div class="p-image"></div>
-            <div class="p-brown">
-                <div class="p-brown__text">
-                    <h2>見出しが入ります</h2>
-                    <h3>小見出しが入ります</h3>
-                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                        <div class="p-card__button">
-                            <a href="#">
-                                    詳しく見る
-                            </a>
+                    </div>
+                </section>
+                <section class="p-card">
+                    <div class="p-card__image"></div>
+                    <div class="p-card__brown">
+                        <div class="p-card__brown__text">
+                            <h2>見出しが入ります</h2>
+                            <h3>小見出しが入ります</h3>
+                            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります
+                                <div class="p-card__button">
+                                    <a href="#">
+                                            詳しく見る
+                                    </a>
+                                </div>
                         </div>
-                </div>
-            </div>
-
-        </section>
-
-        <section class="p-card">
-            <div class="p-image"></div>
-            <div class="p-brown">
-                <div class="p-brown__text">
-                    <h2>見出しが入ります</h2>
-                    <h3>小見出しが入ります</h3>
-                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                        <div class="p-card__button">
-                            <a href="#">
-                                    詳しく見る
-                            </a>
+                    </div>
+                </section>
+                <section class="p-card">
+                    <div class="p-card__image"></div>
+                    <div class="p-card__brown">
+                        <div class="p-card__brown__text">
+                            <h2>見出しが入ります</h2>
+                            <h3>小見出しが入ります</h3>
+                            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります
+                                <div class="p-card__button">
+                                    <a href="#">
+                                            詳しく見る
+                                    </a>
+                                </div>
                         </div>
-                </div>
-            </div>
-
-        </section>
-    <!-- ページネーション -->
-        <section class="p-pagenation--wrapper">
-            <h4>page 1/10</h4>
-            <div class="p-arrow"></div>
-            <ul class="p-pagenation">
-                <li class="p-pagenation__Item"><a href=""><span>1</span></a></li>
-                <li class="p-pagenation__Item"><a href=""><span>2</span></a></li>
-                <li class="p-pagenation__Item"><a href=""><span>3</span></a></li>
-                <li class="p-pagenation__Item"><a href=""><span>4</span></a></li>
-                <li class="p-pagenation__Item"><a href=""><span>5</span></a></li>
-                <li class="p-pagenation__Item"><a href=""><span>6</span></a></li>
-                <li class="p-pagenation__Item"><a href=""><span>7</span></a></li>
-                <li class="p-pagenation__Item"><a href=""><span>8</span></a></li>
-                <li class="p-pagenation__Item"><a href=""><span>9</span></a></li>
-            </ul>
-            <div class="p-arrow__revers"></div>
-        </section>
-        <section class="p-pagenation__sp">
-            <div class="p-pagination-item">
-                <div class="p-arrow"></div>
-                <h4>前へ</h4>
-            </div>
-            <div class="p-pagination-item">
-                <h4>次へ</h4>
-                <div class="p-arrow__revers"></div>
-            </div>
-        </section
-                
+                    </div>
+                </section>
+                <!-- ページネーション -->
+                <section class="p-pagenation--wrapper">
+                    <h4>page 1/10</h4>
+                    <div class="p-arrow"></div>
+                    <ul class="p-pagenation">
+                        <li class="p-pagenation__Item"><a href=""><span>1</span></a></li>
+                        <li class="p-pagenation__Item"><a href=""><span>2</span></a></li>
+                        <li class="p-pagenation__Item"><a href=""><span>3</span></a></li>
+                        <li class="p-pagenation__Item"><a href=""><span>4</span></a></li>
+                        <li class="p-pagenation__Item"><a href=""><span>5</span></a></li>
+                        <li class="p-pagenation__Item"><a href=""><span>6</span></a></li>
+                        <li class="p-pagenation__Item"><a href=""><span>7</span></a></li>
+                        <li class="p-pagenation__Item"><a href=""><span>8</span></a></li>
+                        <li class="p-pagenation__Item"><a href=""><span>9</span></a></li>
+                    </ul>
+                    <div class="p-arrow__revers"></div>
+                </section>
+                <section class="p-pagenation__sp">
+                    <div class="p-pagination-item">
+                        <div class="p-arrow"></div>
+                        <h4>前へ</h4>
+                    </div>
+                    <div class="p-pagination-item">
+                        <h4>次へ</h4>
+                        <div class="p-arrow__revers"></div>
+                    </div>
+                </section
             </main>
         </div>
-            <!-- サイドメニュー -->
-            <section class="l-side-menu">
-                <h2 class="l-menu_title">
-                    Menu
-                </h2>
-                <ul class="l-menu">
-                    <li>
-                        <h3 class="l-menu_subtitle">バーガー</h3>
-                        <ul class="l-menu_list">
-                            <li>ハンバーガー</li>
-                            <li>チーズバーガー</li>
-                            <li>テリヤキバーガー</li>
-                            <li>アボカドバーガー</li>
-                            <li>フィッシュバーガー</li>
-                            <li>ベーコンバーガー</li>
-                            <li>チキンバーガー</li>
-                        </ul>
-                    </li>
+        <!-- サイドメニュー -->
+        <div class="l-side-menu__bg"></div>
+        <section class="l-side-menu">
+            <h2 class="l-menu_title">
+                Menu
+            </h2>
         
-                    <li>
-                        <h3 class="l-menu_subtitle">サイド</h3>
-                        <ul class="l-menu_list">
-                            <li>ポテト</li>
-                            <li>サラダ</li>
-                            <li>ナゲット</li>
-                            <li>コーン</li>
-                        </ul>
-                    </li>
-        
-                    <li>
-                        <h3 class="l-menu_subtitle">ドリンク</h3>
-                        <ul class="l-menu_list">
-                            <li>コーラ</li>
-                            <li>ファンタ</li>
-                            <li>オレンジ</li>
-                            <li>アップル</li>
-                            <li>紅茶（Ice/Hot）</li>
-                            <li>コーヒー（Ice/Hot）</li>
-                        </ul>
-                    </li>
-                    
-                </ul>
-            </section>
-            <!-- モバイルメニュー -->
-<section class="l-side-menu__mobile">
-    <div class="l-side-menu__mobile__item">
-        <div class="l-side-menu__mobile__icon">
-            <span></span>
-            <span></span>
-        </div>
-    
-
-        <ul class="l-menu">
-            <li>
-                <h3 class="l-menu_subtitle">バーガー</h3>
-                <ul class="l-menu_list">
-                    <li>ハンバーガー</li>
-                    <li>チーズバーガー</li>
-                    <li>テリヤキバーガー</li>
-                    <li>アボカドバーガー</li>
-                    <li>フィッシュバーガー</li>
-                    <li>ベーコンバーガー</li>
-                    <li>チキンバーガー</li>
-                </ul>
-            </li>
-
-            <li>
-                <h3 class="l-menu_subtitle">サイド</h3>
-                <ul class="l-menu_list">
-                    <li>ポテト</li>
-                    <li>サラダ</li>
-                    <li>ナゲット</li>
-                    <li>コーン</li>
-                </ul>
-            </li>
-
-            <li>
-                <h3 class="l-menu_subtitle">ドリンク</h3>
-                <ul class="l-menu_list">
-                    <li>コーラ</li>
-                    <li>ファンタ</li>
-                    <li>オレンジ</li>
-                    <li>アップル</li>
-                    <li>紅茶（Ice/Hot）</li>
-                    <li>コーヒー（Ice/Hot）</li>
-                </ul>
-            </li>
-
-        </ul>
-    </div>
-</section>
+            <ul class="l-menu">
+                <div class="l-side-menu__mobile__item">
+                    <div class="l-side-menu__mobile__icon">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <li>
+                    <h3 class="l-menu_subtitle">バーガー</h3>
+                    <ul class="l-menu_list">
+                        <li>ハンバーガー</li>
+                        <li>チーズバーガー</li>
+                        <li>テリヤキバーガー</li>
+                        <li>アボカドバーガー</li>
+                        <li>フィッシュバーガー</li>
+                        <li>ベーコンバーガー</li>
+                        <li>チキンバーガー</li>
+                    </ul>
+                </li>
+            
+                <li>
+                    <h3 class="l-menu_subtitle">サイド</h3>
+                    <ul class="l-menu_list">
+                        <li>ポテト</li>
+                        <li>サラダ</li>
+                        <li>ナゲット</li>
+                        <li>コーン</li>
+                    </ul>
+                </li>
+            
+                <li>
+                    <h3 class="l-menu_subtitle">ドリンク</h3>
+                    <ul class="l-menu_list">
+                        <li>コーラ</li>
+                        <li>ファンタ</li>
+                        <li>オレンジ</li>
+                        <li>アップル</li>
+                        <li>紅茶（Ice/Hot）</li>
+                        <li>コーヒー（Ice/Hot）</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
     </div>        
-        <!-- フッター -->
-        <footer class="l-footer">
-            <div class="l-footer__text">
-                <a href="">ショップ情報</a>｜<a href="">ヒストリー</a>
-                <small>Copyright:Raise Tech</small>
-            </div>
-        </footer>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-            document.querySelector('.l-header__mobilemenuIcon').addEventListener('click', function() {
-            document.querySelector('.l-side-menu__mobile').classList.add('active');
-            // モバイルメニューアイコンをクリックした時にアクティブクラスを消去
-            document.querySelector('.l-side-menu__mobile__icon').addEventListener('click', function() {
-            document.querySelector('.l-side-menu__mobile').classList.remove('active');
-            });
-        });
-    });
-    
-            </script>
+    <!-- フッター -->
+    <footer class="c-footer">
+        <div class="c-footer__text">
+            <a href="">ショップ情報</a>｜<a href="">ヒストリー</a>
+            <small>Copyright:Raise Tech</small>
+        </div>
+    </footer>
 </body>
 </html> 
