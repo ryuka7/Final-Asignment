@@ -56,8 +56,9 @@
         z-index: 10000;
         transform: translateX(0%);
         transition: 0.3s ease-in-out;
-        position: absolute;
+        position: fixed;
         right: 0;
+        overflow-y: auto;
         
         @include respond-to(small) {
             // grid-template-columns: 10% 90%;
@@ -72,9 +73,6 @@
         }
         .l-menu{
             grid-column: 2;
-        }
-        &_body{
-          overflow: hidden;
         }
     }
     .inactive{

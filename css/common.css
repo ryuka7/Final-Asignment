@@ -208,8 +208,9 @@
   z-index: 10000;
   transform: translateX(0%);
   transition: 0.3s ease-in-out;
-  position: absolute;
+  position: fixed;
   right: 0;
+  overflow-y: auto;
 }
 @media (max-width: 375px) {
   .l-side-menu.active {
@@ -225,9 +226,6 @@
 }
 .l-side-menu.active .l-menu {
   grid-column: 2;
-}
-.l-side-menu.active_body {
-  overflow: hidden;
 }
 .l-side-menu .inactive {
   height: 100%;
