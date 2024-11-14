@@ -43,6 +43,7 @@
         color: $text-glay;
         font-weight: bold;
         cursor: pointer;
+        z-index: 2000;
     }
     @include respond-to(small){
         font-size: larger;
