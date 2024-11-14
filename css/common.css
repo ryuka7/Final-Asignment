@@ -12,6 +12,15 @@
   position: relative;
   background-color: #FFFDFA;
 }
+@media (max-width: 375px) {
+  .l-body {
+    min-width: 375px;
+  }
+}
+
+.l-body.active {
+  overflow: hidden;
+}
 
 .l-grid {
   display: grid;
@@ -205,6 +214,7 @@
 @media (max-width: 375px) {
   .l-side-menu.active {
     width: 90vw;
+    min-width: 337px;
   }
 }
 .l-side-menu.active .l-side-menu__mobile__icon {
@@ -215,6 +225,9 @@
 }
 .l-side-menu.active .l-menu {
   grid-column: 2;
+}
+.l-side-menu.active_body {
+  overflow: hidden;
 }
 .l-side-menu .inactive {
   height: 100%;
@@ -268,7 +281,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 55px;
+  margin: 0 auto;
   margin-bottom: 55px;
   width: auto;
   min-width: 345px;
@@ -282,8 +295,7 @@
 }
 @media (max-width: 375px) {
   .c-button {
-    margin-left: 4%;
-    margin-right: 4%;
+    min-width: 90%;
   }
 }
 .c-button a {
@@ -821,6 +833,7 @@
   color: #707070;
   border-radius: 40px;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 @media (max-width: 834px) {
   .p-card__button {

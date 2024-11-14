@@ -58,9 +58,11 @@
         transition: 0.3s ease-in-out;
         position: absolute;
         right: 0;
+        
         @include respond-to(small) {
             // grid-template-columns: 10% 90%;
             width: 90vw;
+            min-width: 337px;
         }
         .l-side-menu__mobile__icon{
             display: block;
@@ -70,6 +72,9 @@
         }
         .l-menu{
             grid-column: 2;
+        }
+        &_body{
+          overflow: hidden;
         }
     }
     .inactive{

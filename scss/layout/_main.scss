@@ -3,6 +3,12 @@
 .l-body{
     position: relative;
     background-color: $backglound-color;
+    @include respond-to(small) {
+        min-width: 375px;
+    }
+}
+.l-body.active {
+    overflow: hidden;
 }
 
 .l-grid{
