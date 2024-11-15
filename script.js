@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuCloseIcon = document.querySelector('.l-side-menu__mobile__icon');
     const mobileBg = document.querySelector('.l-side-menu__bg');
     const mobileBody = document.querySelector('.l-body');
+    
 
     mobileMenuIcon.addEventListener('click', function() {
         sideMenu.classList.add('active');

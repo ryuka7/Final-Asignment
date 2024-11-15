@@ -5,17 +5,21 @@
   display: block;
   height: 100%;
   width: 100%;
+  justify-content: center;
+  align-items: center;
   background-color: $submenu-color;
   color: $text-glay;
 
   @include respond-to(medium) {
     grid-column: inherit;
+    right: 0;
     transform: translateX(100%);
     overflow: hidden;
-    height: 0;
+    height: 100%;
+    width: 0;
+    position: fixed;
     transition: all 0.3s ease;
     position: absolute;
-    transform-origin: 100% 50%;
   }
   &__mobile__icon {
     display: none;
@@ -49,6 +53,7 @@
 
   // .l-side-menuがアクティブ時のスタイル
   &.active {
+      padding-top: 0;
         display: block;
         // grid-template-columns: 50% 50%;
         width: 50vw;
@@ -59,7 +64,6 @@
         position: fixed;
         right: 0;
         overflow-y: auto;
-        
         @include respond-to(small) {
             // grid-template-columns: 10% 90%;
             width: 90vw;
@@ -73,6 +77,9 @@
         }
         .l-menu{
             grid-column: 2;
+            &_subtitle{
+              margin-top: 0;
+            }
         }
     }
     .inactive{
@@ -84,8 +91,11 @@
 .l-menu_title {
 margin: 22% 12%;
 font-size: 1.5em;
-color: $text-glay; 
-  
+color: $text-glay;   
+@include respond-to(medium){
+  display: none;
+}
+
 }
 
  .l-menu{
@@ -99,6 +109,9 @@ color: $text-glay;
 
 .l-menu_subtitle {
   margin: 6% 12%;
+  @include respond-to(medium){
+    margin-top: 60px;
+  }
 }
 
 .l-menu_list {

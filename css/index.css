@@ -1,11 +1,18 @@
 @charset "UTF-8";
-* {
-  font-family: "IBM Plex Sans JP", sans-serif;
+.p-content--wrapper {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+@media screen and (max-width: 375px) {
+  .p-content--wrapper {
+    flex-direction: column;
+  }
 }
 
-.scrollable-element {
-  overflow-y: auto; /* 縦方向のスクロールを許可 */
-  max-height: 100vh; /* 最大高さをビューポートの高さに設定 */
+.p-content--TakeOut {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   background-image: url(../../../images/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png);
   background-size: cover;
@@ -46,11 +53,6 @@
   .p-content__item {
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 4;
-    line-height: 1.5em;
-    height: 6em;
   }
 }
 .p-content__item p {
@@ -107,13 +109,17 @@
     min-height: unset;
   }
 }
+@media screen and (max-width: 375px) {
+  .p-map {
+    height: auto;
+  }
+}
 
 .p-map__shadow {
   display: flex;
   background: rgba(0, 0, 0, 0.4);
   width: 100%;
   height: auto;
-  min-height: 650px;
   top: 0;
   left: 0;
   z-index: 1000;
@@ -121,12 +127,13 @@
 @media screen and (max-width: 834px) {
   .p-map__shadow {
     min-height: unset;
-    max-height: 450px;
   }
 }
 @media screen and (max-width: 375px) {
   .p-map__shadow {
-    min-height: 691px;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 50% auto;
   }
 }
 
@@ -143,14 +150,13 @@
 @media screen and (max-width: 834px) {
   .p-map__shadow--dark {
     min-height: unset;
-    max-height: 450px;
     width: 100%;
     background: rgba(0, 0, 0, 0.4);
   }
 }
 @media screen and (max-width: 375px) {
   .p-map__shadow--dark {
-    height: 415px;
+    height: 100%;
     padding-left: 30px;
   }
 }
@@ -165,17 +171,13 @@
   width: 70%;
   margin: 10%;
   line-height: 2em;
+  word-wrap: break-word;
 }
 @media screen and (max-width: 834px) {
   .p-map__shadow--dark p {
     width: auto;
     margin: 5%;
     line-height: 2.5em;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 7;
   }
 }
 @media screen and (max-width: 375px) {
