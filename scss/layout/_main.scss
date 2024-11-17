@@ -3,6 +3,7 @@
 .l-body{
     position: relative;
     background-color: $backglound-color;
+    overflow-x: hidden;
     @include respond-to(small) {
         min-width: 375px;
     }

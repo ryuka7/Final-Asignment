@@ -11,6 +11,7 @@
 .l-body {
   position: relative;
   background-color: #FFFDFA;
+  overflow-x: hidden;
 }
 @media (max-width: 375px) {
   .l-body {
