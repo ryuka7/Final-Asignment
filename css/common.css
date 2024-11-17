@@ -280,11 +280,13 @@
   width: 100%;
   opacity: 0;
   transition: opacity 0.5s ease;
+  z-index: -1;
 }
 .l-side-menu__bg.active {
   display: block;
   opacity: 0.5;
   transition: opacity 0.5s ease;
+  z-index: 1;
 }
 
 .l-text-aria {
